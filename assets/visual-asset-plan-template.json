@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "slide_ratio": "16:9",
+  "image_generation_provider": "imagegen-gpt-image-2",
+  "slides": [
+    {
+      "slide_id": "S01",
+      "page_archetype": "P01",
+      "claim": "Replace with a fact-supported conclusion before production.",
+      "layout": {
+        "text_safe_zones": [
+          {"name": "title", "x": 0.06, "y": 0.14, "w": 0.38, "h": 0.32}
+        ]
+      },
+      "assets": [
+        {
+          "asset_id": "S01-BG-01",
+          "role": "background",
+          "source_strategy": "imagegen",
+          "factual_role": "atmosphere",
+          "composition_control": "safe_zone",
+          "slot": {"x": 0, "y": 0, "w": 1, "h": 1},
+          "target_aspect_ratio": "16:9",
+          "subject_position": "right 40%, left text-safe zone remains low-detail",
+          "generation_brief": {
+            "title_signal": "Replace with the emotional or narrative signal of the fact-supported slide claim.",
+            "style_keywords": ["replace", "with", "project style"],
+            "subject_description": "One primary subject, fully visible in the right 40% of the canvas.",
+            "scene_description": "A low-detail supporting scene that preserves the left text-safe zone."
+          },
+          "prompt": "Use case: stylized-concept. Asset type: PPT background placeholder. Primary request: Replace this placeholder with one scene that supports the slide claim. Composition: keep the left text-safe zone low-detail. Constraints: no text, no watermark, no logo, no fake UI or data.",
+          "negative_constraints": ["no text", "no watermark", "no logo", "no fake UI or data"],
+          "contains_embedded_text": false,
+          "static_fallback": "Use the same still image as the slide background."
+        }
+      ]
+    }
+  ]
+}

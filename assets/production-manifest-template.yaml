@@ -1,0 +1,38 @@
+project:
+  topic: ""
+  classification:
+    industry_code: "I__"
+    scenario_code: "H__"
+    confidence: 0.0
+  audience:
+    value: ""
+    status: needs_confirmation
+  stage:
+    value: ""
+    status: inferred
+  communication_job:
+    value: ""
+    status: needs_confirmation
+  duration_minutes:
+    value: 10
+    status: default
+  viewing_mode: 现场
+content:
+  source_ledger: ""
+  core_claim:
+    value: ""
+    status: inferred
+  must_include: []
+  must_exclude: []
+  evidence: []
+  data_gaps: []
+  confidentiality: internal
+design:
+  visual_motif: ""
+  palette: ""
+  image_policy: user_assets_first
+  motion_level: L1
+delivery:
+  formats: [pptx, source_notes]
+  qa_threshold: 85
+  residual_risks: []

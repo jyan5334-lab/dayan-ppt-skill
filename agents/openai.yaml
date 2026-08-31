@@ -1,0 +1,4 @@
+interface:
+  display_name: "大琰PPT Skill"
+  short_description: "跨15行业与12场景生成、校验并持续沉淀专业PPT"
+  default_prompt: "使用 $dayan-ppt 根据我提供的资料识别行业与场景，生成可直接交付并完成数据校验的PPT。"

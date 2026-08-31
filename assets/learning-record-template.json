@@ -1,0 +1,40 @@
+{
+  "case_id": "i__-h__-short-name-yyyymmdd",
+  "date": "YYYY-MM-DD",
+  "status": "candidate",
+  "classification": {
+    "industry_code": "I__",
+    "scenario_code": "H__"
+  },
+  "stage": "",
+  "audience_type": "",
+  "input_types": [],
+  "accepted_patterns": [],
+  "rejected_patterns": [],
+  "stable_rules": [],
+  "style_variables": [],
+  "style_profile": {
+    "source": "none",
+    "mode": "visual_inspiration",
+    "rights_status": "not_applicable",
+    "status": "project_only"
+  },
+  "data_rules": [],
+  "qa": {
+    "total_score": 0,
+    "delivery_complete": false,
+    "overflow_free": false,
+    "archive_valid": false,
+    "hard_failures": [],
+    "user_accepted": false
+  },
+  "promotion": {
+    "status": "candidate",
+    "supporting_case_ids": [],
+    "human_confirmed": false
+  },
+  "privacy": {
+    "contains_client_data": false,
+    "anonymized": true
+  }
+}

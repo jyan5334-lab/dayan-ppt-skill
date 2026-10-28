@@ -1,6 +1,8 @@
 # 大琰PPT Skill
 
-一个面向 Codex 的专业 PPT 生产与持续学习技能：从 Word、PDF、Excel、图片或既有 PPT 中提取可核验材料，识别行业与场景，组织证据和叙事，生成可编辑演示文稿，并完成逐页 QA 与交付后经验沉淀。
+**当前版本：v1.0.1**
+
+一个面向 Codex 的证据驱动型专业 PPT 生产与持续学习技能：从 Word、PDF、Excel、图片或既有 PPT 中提取可核验材料，识别行业与场景，组织证据和叙事，生成可编辑演示文稿，并完成逐页 QA 与交付后经验沉淀。
 
 它不是单一模板，也不是“把文字自动排成几页”的脚本。技能固定的是事实边界、场景判断、证据链和验收门禁；配色、版式、图片语言和动效会根据行业、受众、品牌和观看方式变化。
 
@@ -23,7 +25,22 @@
 
 ## 使用方式
 
-将本仓库作为 Codex Skill 安装后，在任务中直接调用：
+### 安装
+
+将仓库克隆到 Codex 技能目录：
+
+```bash
+git clone https://github.com/jyan5334-lab/dayan-ppt-skill.git ~/.codex/skills/dayan-ppt
+```
+
+如果此前是通过本仓库克隆安装，进入目录升级：
+
+```bash
+cd ~/.codex/skills/dayan-ppt
+git pull --ff-only origin main
+```
+
+安装或升级后，在 Codex 中直接调用：
 
 ```text
 请使用 $dayan-ppt，根据我提供的资料识别行业与场景，生成可编辑 PPT，并完成数据校验、逐页 QA 和交付说明。
@@ -100,8 +117,20 @@ python scripts/test_learning_registry.py
 ├── scripts/                         # 工作簿审计、事实校验、计划校验和学习注册表
 ├── assets/                          # production manifest、deck plan 等模板
 ├── examples/screenshots/            # 可公开展示的示例截图
-└── docs/使用与验收说明.md             # 入口、权限、异常和验收清单
+├── docs/使用与验收说明.md             # 入口、权限、异常和验收清单
+├── VERSION                           # 当前发布版本
+└── CHANGELOG.md                      # 按版本记录的真实变更
 ```
+
+## 版本规则
+
+本仓库使用语义化版本：
+
+- `MAJOR`：存在不兼容的技能契约、输入输出或工作流变化。
+- `MINOR`：新增向后兼容的能力、脚本、规则库或模板。
+- `PATCH`：修正文档、元数据、校验问题或其他不改变核心行为的更新。
+
+版本历史见 [CHANGELOG.md](CHANGELOG.md)。仓库版本以 `VERSION`、Git 标签和 GitHub Release 三者一致为准。
 
 ## 边界与限制
 
@@ -116,3 +145,4 @@ python scripts/test_learning_registry.py
 - [完整技能契约](SKILL.md)
 - [使用与验收说明](docs/使用与验收说明.md)
 - [示例截图说明](examples/screenshots/README.md)
+- [版本更新日志](CHANGELOG.md)
